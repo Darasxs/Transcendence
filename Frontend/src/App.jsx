@@ -47,6 +47,17 @@ function App() {
         </label>
         <button type="submit">Add to Portfolio</button>
       </form>
+
+      <h2>My Portfolio</h2>
+      <ul>
+        {portfolio.map((item) => (
+          <li key={item.id}>
+            {item.asset}: {item.amount}
+          </li>
+        ))}
+      </ul>
+
+
     </main> 
   );
 }
