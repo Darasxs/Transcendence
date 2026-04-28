@@ -1,0 +1,12 @@
+services:
+  react-app:
+    build: srcs/react
+    container_name: react-app
+
+  nginx:
+    build: srcs/nginx
+    container_name: nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - react-app
