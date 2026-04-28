@@ -1,12 +1,19 @@
 services:
-  react-app:
-    build: srcs/react
-    container_name: react-app
+  frontend:
+    build: srcs/frontend
+    container_name: frontend_container
+    volumes:
+      - shared-data:/shared
 
   nginx:
     build: srcs/nginx
-    container_name: nginx
+    container_name: nginx_container
     ports:
       - "8080:80"
+    volumes:
+      - shared-data:/usr/share/nginx/html
     depends_on:
-      - react-app
+      - frontend
+
+volumes:
+  shared-data:
