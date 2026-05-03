@@ -256,6 +256,8 @@ Document any known bugs, incomplete features, or security/compatibility issues.
 ## License & Credits
 
 - Add license information here.
-- Credit any external resources, tutorials, or boilerplates used.
-
+- https://swagger.io/specification/ - API
+- https://spec.openapis.org/oas/v3.1.0.html - API
+- https://www.youtube.com/watch?v=-MTSQjw5DrM - API
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods - API
 ---
